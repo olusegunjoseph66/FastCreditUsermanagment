@@ -1,0 +1,129 @@
+﻿html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+header {
+    background-color: #3b3420;
+    font-size: .67rem;
+    text-align: right;
+    padding: .4rem;
+}
+
+    header a {
+        color: #ffffff !important;
+        text-decoration: none;
+        padding: .3rem;
+    }
+/*a:link {
+    color: #3b3420;
+    text-decoration: none;
+}*/
+h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    margin: 0;
+    line-height: 1em;
+    text-indent: 1rem;
+}
+
+.hero {
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+}
+
+    .hero img {
+        max-width: 100%;
+    }
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+    .hero-text p {
+        margin: 0;
+    }
+
+a:visited {
+    color: #3b3420;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #a52f09;
+    text-decoration: none;
+}
+
+a:active {
+    color: #a52f09;
+}
+
+a.order-button, a.order-button:hover {
+    color: #fdfcf7;
+}
+
+.productInfo, .action {
+    max-width: 250px;
+}
+
+p {
+    font-size: 0.8rem;
+}
+
+#orderProcess {
+    list-style: none;
+    padding: 0;
+    clear: both;
+}
+
+    #orderProcess li {
+        color: #696969;
+        display: inline;
+        font-size: 1.2em;
+        margin-right: 15px;
+        padding: 3px 0px 0px 5px;
+    }
+
+.step-number {
+    background-color: #edece8;
+    border: 1px solid #e6e4d9;
+    font-size: 1.5em;
+    margin-right: 5px;
+    padding: 3px 10px;
+}
+
+.current .step-number {
+    background-color: #a52f09;
+    border-color: #712107;
+    color: #fefefe;
+}
+
+.orderPageList {
+    padding-inline-start: 20px;
+}
+
+.actions .order-button {
+    margin-left: 20px;
+}

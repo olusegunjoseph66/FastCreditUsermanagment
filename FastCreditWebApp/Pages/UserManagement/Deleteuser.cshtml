@@ -1,0 +1,84 @@
+﻿@page "{id:min(1)?}/{handler?}"
+@model FastCreditWebApp.Pages.UserManagement.DeleteuserModel
+@{
+    Layout = "~/Pages/Shared/_LayoutA.cshtml";
+}
+
+
+<form method="post" enctype="multipart/form-data">
+
+   
+
+@{
+    if (Model.UserDetaResponselst?.data != null)
+    {
+       
+        <div class="main-content">
+            <div class="section__content section__content--p30">
+
+                <h2> User Details </h2>
+                <div>
+
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-12">
+
+                                <div class="clearfix"></div>
+                                <br />
+                                <br />
+                                <table class="table table-borderless table-hover table-striped table-condensed table-earning">
+                                        <input type="hidden" asp-for="@Model.UserDetaResponselst.data.UserId" value="@Model.id" />
+                                    <tr>
+                                        <td>User ID</td>
+                                        <td>@Model.UserDetaResponselst?.data?.UserId</td>
+                                    </tr>
+                                    <tr>
+                                        <td>First Name</td>
+                                        <td>@Model.UserDetaResponselst?.data?.FirstName</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Last Name</td>
+                                        <td>@Model.UserDetaResponselst?.data?.LastName</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Phone</td>
+                                        <td>@Model.UserDetaResponselst?.data?.Phone</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Email</td>
+                                        <td>@Model.UserDetaResponselst?.data?.EmailAddress</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gender</td>
+                                        <td>@Model.UserDetaResponselst?.data?.Gender</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Date Of Birth</td>
+                                        <td>@Model.UserDetaResponselst?.data?.DateOfBirth</td>
+                                    </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td>
+                                                <button class="btn btn-sm btn-danger" style="width:67px" asp-page-handler="Delete" asp-route-TimeId="@Model.UserDetaResponselst?.data?.UserId" value="@Model.UserDetaResponselst?.data?.UserId">Delete</button>
+                                                
+                                            </td>
+                                        </tr>
+                                        
+
+                                    
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   
+    }
+}
+
+   
+  
+</form>

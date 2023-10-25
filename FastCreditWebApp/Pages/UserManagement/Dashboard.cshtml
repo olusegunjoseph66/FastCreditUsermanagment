@@ -1,0 +1,23 @@
+﻿@page
+@model FastCreditWebApp.Pages.UserManagement.DashboardModel
+@{
+    ViewData["Title"] = "Dashboard";
+    Layout = "~/Pages/Shared/_LayoutA.cshtml";
+}
+
+<header>
+    <nav>
+        @{
+
+
+
+                <a asp-area="" asp-page="/UserManagement/Adduser" >Add User</a>
+                <a asp-area="" asp-page="/UserManagement/Adduser" >Delete User</a>
+                <a asp-area="" asp-page="/UserManagement/Listuser">Users </a>
+            
+        }
+
+    </nav>
+</header>
+
+
